@@ -11,11 +11,11 @@ Disclaimer: This is just an experimental project. It may turn out ok or really b
 
 There are approximately 18 million characters within the dataset. Due to costs, it would be quite expensive to translate it entirely on my own.
 
-As of now, Google Cloud Translate API provides free 500k characters per month. It would be great if others can help translate a portion with their free credits and make a PR.
+As of now, Google Cloud Translate API provides free 500k characters per month. It would be great if others can help translate a portion with their free credits and make a PR. Takes a few minute to setup repo and about 13 minutes to translate one portion.
 
 # Progress so far:
 
-Trained a simple LORA on the first translated portion.
+Trained a simple LORA on the first translated portion. 3 Epochs (~18 minutes training)
 
 Here are some samples:
 
