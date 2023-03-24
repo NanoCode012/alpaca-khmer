@@ -48,7 +48,7 @@ As of now, the results show that it's mainly rephrasing the question. However, t
 1. `python3 -m venv venv`
 2. Activate env
 3. `pip install google-cloud-translate tqdm`
-4. Authenticate to Google Cloud
+4. Authenticate to Google Cloud and enable Cloud Translation API
 5. In `translate.py`, edit `file_to_translate` to the desired dataset split
     - Note: Make sure to not choose a split that has already been translated!
     - Only file0 has been translated!
