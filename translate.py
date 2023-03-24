@@ -6,7 +6,7 @@ from tqdm import tqdm
 from google.cloud import translate_v2 as translate
 
 # Change this!
-file_to_translate = 'dataset_splits/alpaca_data_cleaned_0.json'
+file_to_translate = 'dataset_splits/alpaca_data_cleaned_1.json'
 
 output_file = file_to_translate.replace('dataset_splits', 'translated_dataset_splits')
 
