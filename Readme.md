@@ -1,58 +1,37 @@
 # Alpaca Khmer
+
+An attempt to train an alpaca LORA on a Khmer machine translated of `alpaca_data_cleaned.json`. 
+
+Disclaimer: This is just an experimental project. It may turn out ok or really bad.
+
 ---
 
-An attempt to train a LORA on the alpaca LLM on a Khmer machine translated of `alpaca_data_cleaned.json`. 
+## Results now:
 
-Disclaimer: This is just an experimental project. It may turn out ok or really bad. 
-
-## Required help :
-
-- 👥 crowd translating dataset to Khmer. Progress: 1/35
-
-There are approximately 18 million characters within the dataset. Due to costs, it would be quite expensive to translate it entirely on my own.
-
-As of now, Google Cloud Translate API provides free 500k characters per month. It would be great if others can help translate a portion with their free credits and make a PR. Takes a few minute to setup repo and about 13 minutes to translate one portion.
-
-# Progress so far:
-
-Trained a simple LORA on the first translated portion. 3 Epochs (~18 minutes training)
-
-Here are some samples:
+Here are some samples trained on translated dataset:
 
 ```
-Q: សួស្តី
-A: សួស្តី
+Q: "សួស្តី"
+A: "ខ្ញុំបានសួស្តីពីអ្វីដែលត្រូវបានប្រើដើម្បីបង្កើនប្រសិទ្ធភា"
 
---
 
-Q: តើធ្វើដូចម្តេចដើម្បីដុតនំខេក?
-A: ដូចម្តេចដើម្បីដុតនំខេក
+Q: "តើអាល់ប៉ាកាជាអ្វី?"
+A: "អាល់ប៉ាកាជាអ្វីអាចត្រូវបានប្រើដើម្បីកាត់បន្ថយភាពតានតឹង និ��"
 
--- 
 
-(From train dataset)
+Q: "ផ្តល់គន្លឹះបីយ៉ាងដើម្បីរក្សាសុខភាព"
+A: "គន្លឹះបីយ៉ាងដើម្បីរក្សាសុខភាពគួរតែត្រូវបានប្រើដើម្បីកាត់�"
 
-Q: ផ្តល់គន្លឹះបីយ៉ាងដើម្បីរក្សាសុខភាព
-A: ការបញ្ជាក់ដើម្បីរក្សាសុខភាព
 
---
+Q: "តើធ្វើដូចម្តេចដើម្បីដុតនំខេក?"
+A: "ធ្វើដូចម្តេចដើម្បីដុតនំខេកគឺដើម្បីបង្កើតប្រយោគដែល"
 
-Q: ប្រាប់ខ្ញុំអំពីស្តេចបារាំងនៅឆ្នាំ 2019
-A: ប្រាប់ខ្ញុំអំពីស្តេចបារាំងនៅឆ្នាំ 2019
 
+Q: "ប្រាប់ខ្ញុំអំពីស្តេចបារាំងនៅឆ្នាំ 2019"
+A: "ស្តេចបារាំងនៅឆ្នាំ 2019 គឺជាស្តេចបារាំងដ៏ល្អបំផុតនៅឆ្នាំ 2019 ដ��"
 ```
 
-As of now, the results show that it's mainly rephrasing the question. However, the fact that it answers in Khmer is a really good sign since the base model was trained on Latin/Cryllic languages.
-
-## Setup to translate
-1. `python3 -m venv venv`
-2. Activate env
-3. `pip install google-cloud-translate tqdm`
-4. Authenticate to Google Cloud and enable Cloud Translation API
-5. In `translate.py`, edit `file_to_translate` to the desired dataset split
-    - Note: Make sure to not choose a split that has already been translated!
-    - Only file0 has been translated!
-6. Run `python translate.py`
+There seems to be problems with the model. Unlike before, it does not repeat the question, but starts to spit out random text.
 
 ## Credits
 https://github.com/tatsu-lab/stanford_alpaca
