@@ -6,6 +6,10 @@ Disclaimer: This is just an experimental project. It may turn out ok or really b
 
 ---
 
+Thank you to [SpeakTe](https://www.speakte.com) for sponsoring the translation!
+
+<img src="img/speakte-banner.png" width="100" height="50" alt-text="speakte-banner"/>
+
 ## Results now:
 
 Here are some samples trained on translated dataset:
@@ -31,9 +35,22 @@ Q: "ប្រាប់ខ្ញុំអំពីស្តេចបារាំ�
 A: "ស្តេចបារាំងនៅឆ្នាំ 2019 គឺជាស្តេចបារាំងដ៏ល្អបំផុតនៅឆ្នាំ 2019 ដ��"
 ```
 
-There seems to be problems with the model. Unlike before, it does not repeat the question, but starts to spit out random text.
+
+### Discussion
+
+The model has been improved significantly since V1. It has been trained over the full dataset.
+
+Unlike before, the model does not repeat the question back, but starts to spit out random text.
+
+## History
+
+- (25/Mar) V2: Trained on full dataset. 3 epochs.
+
+- (23/Mar) V1: Trained on single portion of dataset. 3 epochs.
 
 ## Credits
 https://github.com/tatsu-lab/stanford_alpaca
 
 https://github.com/tloen/alpaca-lora
+
+https://github.com/huggingface/peft
