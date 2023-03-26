@@ -52,7 +52,7 @@ V3: ប្រធានាធិបតីម៉ិកស៊ិកក្នុង�
 
 Another model has finished training for 10 epochs. We can observe that it is closer in answering questions than before. One thing of concern was how the text kept getting cut off mid response.
 
-After this, I quickly tested and found that a lot of data were being cut off due to the context length being much longer than in English, most likely due to unicode encoding.
+After this, I quickly tested and found that a lot of data were being cut off due to the context length being much longer than in English, most likely due to unicode encoding, causing a lot of data to be skipped.
 
 #### (25/Mar)
 
