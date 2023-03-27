@@ -50,7 +50,7 @@ V4: ប្រធានាធិបតីម៉ិកស៊ិកនៅក្ន�
 
 ### (27/Mar)
 
-A model that has trained on a twice the previous context length has finished. Furthermore, I fixed a bug where output has been limited to a low number.
+A model that has trained on twice the previous context length has finished. Furthermore, I fixed a bug where output has been limited to a low number.
 
 First, the results do not contain as much leftover artifats. The artifacts are most likely due to being cutoff words. Second, it attempts to answer questions more now, however, it hallucinates. For example, it remembers the wrong person for the Mexican president in 2019. Thirdly, since the output limit has been lifted higher, it starts to repeat itself multiple times.
 
