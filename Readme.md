@@ -57,6 +57,12 @@ V5: ប្រធានាធិបតីម៉ិកស៊ិកក្នុង�
 
 ### Discussion
 
+#### (29/Mar)
+
+From discussions in Discord with Sliden, it would be interesting to translate the prompt as well or to make it understand to answer in Khmer. Furthermore, it should be necessary to purge code from the dataset as it should not have been translated. 
+
+Lastly, attempts should be made soon to translate the new update cleaned dataset. Perhaps, using diff to find the difference and only translating those rows. Maybe using a database to store this will be useful.
+
 #### (28/Mar) - V5
 
 Following discussions from days prior and studying the token lengths of the dataset, I found that the data is longer than the EN. I have now finished training a model with a much longer cut off length. 
